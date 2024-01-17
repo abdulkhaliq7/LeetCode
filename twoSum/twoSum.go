@@ -19,16 +19,17 @@ func twoSum(nums []int, target int) []int {
 		} else {
 			x = i
 			y = seen[target -v]
+			break
 		}
 	}
-	return []int{x, y}
+	return []int{y, x}
 }
 
 func main() {
 
 	nums := []int{1, 2, 3, 4, 5}
 
-	target := 3
+	target := 5
 
 	result := twoSum(nums, target)
 
