@@ -2,6 +2,7 @@ package main
 
 import "fmt"
 
+
 func isAnagram(s string, t string) bool {
 	if len(s) != len(t) {
 		return false
@@ -13,6 +14,7 @@ func isAnagram(s string, t string) bool {
 
 	for _, s1 := range s {
 		freqs[s1]++
+		fmt.Println(freqs)
 	}
 
 	for _, t1 := range t {
