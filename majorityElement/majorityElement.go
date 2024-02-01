@@ -2,6 +2,7 @@ package main
 
 import "fmt"
 
+/*
 func majorityElement(nums []int) int {
 
     seen := make(map[int]int)
@@ -18,6 +19,25 @@ func majorityElement(nums []int) int {
         }
     }
 
+    return majority
+    
+}
+
+*/
+
+
+func majorityElement(nums []int) int {
+
+    seen := make(map[int]int)
+
+    var majority int
+
+    for i:=0; i < len(nums); i++ {
+        seen[nums[i]]++
+        if seen[nums[i]] > len(nums)/2 {
+            majority = nums[i]
+        }
+    }
     return majority
     
 }
