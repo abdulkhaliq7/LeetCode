@@ -16,8 +16,6 @@ func linearSearch(data []int, target int) *int {
 	return nil
 }
 
-
-
 func main() {
 
 	target := 7
